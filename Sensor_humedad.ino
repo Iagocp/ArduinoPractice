@@ -1,12 +1,12 @@
 void setup() {
   //Paso 1
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("Valor del sensor de humedad");
 }
 
 void loop() {
   //Paso 2
-  int humidity = analogRead(A0);
+  int humidity = analogRead(33);
   Serial.print("Lectura:");
   Serial.println(humidity);
   //Paso 3
